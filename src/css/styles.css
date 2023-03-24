@@ -33,6 +33,18 @@
 
   --main-color: #111111;
   --accent-color: #fd9222;
+  --products-text: rgba(17, 17, 17, 0.7);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
@@ -45,15 +57,14 @@ body {
   letter-spacing: -0.02em;
 }
 
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.section {
+  padding-top: 72px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 .section-title {
