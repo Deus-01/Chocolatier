@@ -5,16 +5,16 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./header.css');
+@import url('./offer.css');
+@import url('./taste.css');
+@import url('./how-made.css');
+@import url('./our-products.css');
+@import url('./top-sellers.css');
 @import url('./chocolate.css');
+@import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./form.css');
-@import url('./header.css');
-@import url('./how-made.css');
-@import url('./offer.css');
-@import url('./our-products.css');
-@import url('./subscribe.css');
-@import url('./taste.css');
-@import url('./top-sellers.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
