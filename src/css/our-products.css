@@ -1,21 +1,29 @@
 .swiper {
-  width: 900px;
-  height: 500px;
 }
 .image-slider {
-  padding: 30px 0 70px 0;
+  padding: 0;
 }
 .image-wrapper {
   text-align: center;
 }
+
+.image-wrapper img {
+  display: inline-block;
+}
 img {
-  max-width: 100%;
+  display: block;
 }
 
 .image-slider .swiper-button-next::after,
 .image-slider .swiper-button-prev::after {
   color: blueviolet;
   font-size: 90px;
+}
+
+.swiper-pagination {
+  width: 400px;
+  z-index: 10;
+  margin-top: 50px;
 }
 
 /* Custom button  */

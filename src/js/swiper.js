@@ -1,7 +1,7 @@
 const swiper = new Swiper(".image-slider", {
   // Optional parameters
 
-  loop: true,
+  loop: false,
 
   // If we need pagination
   pagination: {
@@ -10,20 +10,15 @@ const swiper = new Swiper(".image-slider", {
     dynamicBullets: true,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   spaceBetween: 30,
-  //   autoplay: {
-  //     delay: 1000,
-  //     disableOnInteraction: false,
-  //     stopOnLastSlide: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      stopOnLastSlide: false,
 
-  //   },
+    },
   speed: 1500,
   //   breakpoints: {
   //     // when window width is >= 320px
