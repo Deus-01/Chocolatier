@@ -1,30 +1,118 @@
 .subscribe-section {
     padding-top: 62px;
+    padding-bottom: 63px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(17, 17, 17, 0.7);
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .hero {
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/product-mobile@2x.jpg);
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/product-mobile@2x.jpg);
     }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero {
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/product-tablet@2x.jpg);
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/product-tablet@2x.jpg);
     }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    .hero {
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/product-desktop@2x.jpg);
+    .subscribe-section {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/product-desktop@2x.jpg);
     }
 }
 
-.subscribe-descr {}
+.subscribe-descr {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.subscribe-text {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subscribe-button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #FFFFFF;
+
+    background-color: var(--accent-color);
+    border: 0px;
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    padding: 12px 28px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    color: var(--accent-color);
+    background-color: #FCF1E0;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        max-width: 768px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/product-tablet.jpg);
+    }
+
+    .subscribe-descr {
+        width: 378px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    .subscribe-text {
+        width: 467;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .subscribe-section {
+        max-width: 1200px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/product-desktop.jpg);
+    }
+
+}
