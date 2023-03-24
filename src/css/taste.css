@@ -1,0 +1,106 @@
+
+:root {
+    --orange: #FD9222;
+    --black: #111111;
+    --purple: #1E1823;
+    --white: #FAFAFA;
+    }
+    h2,
+    h3,
+    p{
+      margin: 0;
+    }
+    
+    
+    ul{
+      list-style: none;
+    }
+    .test{
+      color: var(--orange);
+    }
+    h2{
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+    p{
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.29;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: var(--black);
+    }
+    .taste-list-chocolate{
+      background-color: var(--orange);
+    }
+    .taste-list-nuts{
+      background-color: var(--purple);
+    }
+    .taste-list-milk,
+    .taste-list-glaze{
+      background: var(--white);
+      border: 1px solid #FD9222;
+    }
+    .taste-list li{
+      padding: 28px 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .description-black,
+    .description-white{
+      position: absolute;
+      left: 28px;
+      bottom: 28px;
+    
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.29;
+      /* identical to box height, or 129% */
+    
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+    .description-black{
+      color: var(--black);
+    }
+    .description-white{
+      color: var(--white);
+    }
+    
+    @media{
+    .container{
+      width: 100%;
+      max-width: 335px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    .taste-list{
+      padding: 0;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 32px;
+    }
+    p{
+      margin-top: 24px;
+    }
+    .taste-list li{
+      height: 270px;
+      border-radius: 15px;
+    }
+    .taste-photo{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    }
