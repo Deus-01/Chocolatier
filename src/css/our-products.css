@@ -1,0 +1,50 @@
+.swiper {
+  width: 900px;
+  height: 500px;
+}
+.image-slider {
+  padding: 30px 0 70px 0;
+}
+.image-wrapper {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+.image-slider .swiper-button-next::after,
+.image-slider .swiper-button-prev::after {
+  color: blueviolet;
+  font-size: 90px;
+}
+
+/* Custom button  */
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  margin-left: 30px;
+  display: inline-block;
+}
+.swiper-button-next::after {
+  content: "⇢";
+  font-size: 40px;
+  color: #be09d2;
+}
+.swiper-button-prev::after {
+  content: "⇠";
+  font-size: 40px;
+  color: #be09d2;
+} */
+
+.image-slider .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.553);
+}
+.image-slider .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 32px;
+  background: #fd9222;
+}

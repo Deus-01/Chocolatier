@@ -1,2 +1,2 @@
-import '/js/carousel';
-import '/js/modal';
+import './js/swiper';
+import './js/modal';
