@@ -1,51 +1,33 @@
-
-:root {
-    --orange: #FD9222;
-    --black: #111111;
-    --purple: #1E1823;
-    --white: #FAFAFA;
+/* 
+    .title-accent{
+        color: var(--accent-color);
     }
-    h2,
-    h3,
-    p{
-      margin: 0;
-    }
-    
-    
-    ul{
-      list-style: none;
-    }
-    .test{
-      color: var(--orange);
-    }
-    h2{
-      font-family: 'Montserrat';
+    .section-title{
       font-weight: 600;
       font-size: 20px;
       line-height: 1.2;
       text-align: center;
       letter-spacing: -0.03em;
       text-transform: uppercase;
-      color: var(--black);
+      color: var(--main-color);
     }
     p{
-      font-family: 'Montserrat';
       font-weight: 400;
       font-size: 14px;
       line-height: 1.29;
       text-align: center;
       letter-spacing: -0.02em;
-      color: var(--black);
+      color: var(--main-color);
     }
     .taste-list-chocolate{
-      background-color: var(--orange);
+      background-color: var(--accent-color);
     }
     .taste-list-nuts{
-      background-color: var(--purple);
+      background-color: #1E1823;
     }
     .taste-list-milk,
     .taste-list-glaze{
-      background: var(--white);
+      background: white;
       border: 1px solid #FD9222;
     }
     .taste-list li{
@@ -61,8 +43,6 @@
       left: 28px;
       bottom: 28px;
     
-      font-family: 'Montserrat';
-      font-style: normal;
       font-weight: 600;
       font-size: 14px;
       line-height: 1.29;
@@ -72,10 +52,10 @@
       text-transform: uppercase;
     }
     .description-black{
-      color: var(--black);
+      color: var(--main-color);
     }
     .description-white{
-      color: var(--white);
+      color: white;
     }
     
     @media{
@@ -103,4 +83,4 @@
       margin-left: auto;
       margin-right: auto;
     }
-    }
+    } */
