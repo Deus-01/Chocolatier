@@ -6,10 +6,14 @@
   height: 410px;
 }
 
+.swiper-slide {
+  width: 100%;
+}
+
 .image-wrapper {
   padding-top: 32px;
   text-align: center;
-
+  max-width: 335px;
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -23,12 +27,6 @@
 .image-slider .swiper-button-prev::after {
   color: blueviolet;
   font-size: 90px;
-}
-
-.swiper-pagination {
-  width: 400px;
-  z-index: 10;
-  margin-top: 50px;
 }
 
 .image-slider .swiper-pagination-bullet {
