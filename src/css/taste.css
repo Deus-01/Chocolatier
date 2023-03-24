@@ -48,9 +48,9 @@
       line-height: 1.29;
       /* identical to box height, or 129% */
     
-      letter-spacing: -0.02em;
+      /* letter-spacing: -0.02em;
       text-transform: uppercase;
-    }
+    } */
     .description-black{
       color: var(--main-color);
     }
