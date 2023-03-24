@@ -1,0 +1,34 @@
+<section class="section topsellers-section">
+    <div class="container topsellers-container">
+        <h2 class="section-title"><span class="title-accent">Top </span>Sellers</h2>
+        <ul class="topsellers-list">
+            <li class="topseller-item">
+                <picture class="topseller-image">
+                    <source srcset="../img/top/coffee-desktop.jpg 1x, ../img/top/coffee-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="../img/top/coffee-tablet.jpg 1x, ../img/top/coffee-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="../img/top/coffee-mobile.jpg 1x, ../img/top/coffee-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="../img/top/coffee-mobile.jpg" alt="Chocolate with coffee beans">
+                </picture>
+            </li>
+            <li class="topseller-item">
+                <picture class="topseller-image">
+                    <source srcset="../img/top/mint-desktop.jpg 1x, ../img/top/mint-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="../img/top/mint-tablet.jpg 1x, ../img/top/mint-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="../img/top/mint-mobile.jpg 1x, ../img/top/mint-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <img src="../img/top/mint-mobile.jpg" alt="Milk chocolate with mint">
+                </picture>
+            </li>
+            <li class="topseller-item">
+                <!-- this img is present on the desktop version only, so there's no point to use picture; will be hidden on mobile and tablet with CSS -->
+                <img class="topseller-image" srcset="../img/top/candy-desktop.jpg 1x, ../img/top/candy-desktop@2x.jpg 2x" src="../img/top/candy-desktop.jpg" alt="Chocolate bars">
+            </li>
+        </ul>
+        <div class="topsellers-info">
+            <p class="topsellers-description">
+                Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
+                thousands of years and was first discovered by the Native American tribe called the Mayans.
+            </p>
+            <button type="button" class="button" js-open-modal>Buy now</button>
+        </div>
+    </div>
+</section>
