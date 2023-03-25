@@ -11,39 +11,134 @@
 
     <ul class="taste-list">
       <li class="taste-list-chocolate">
-        <img 
+
+        <!-- <img 
               srcset="../img/taste/chocolate-mobile.png 224w, ../img/taste/chocolate-mobile@2x.png 448w"
               sizes="224px"
               src="../img/taste/chocolate-mobile.png"
               alt="Chocolate"
-            />
-            <h3 class="description-white">MILK CHOCOLATE</h3>
+            /> -->
+
+        <picture class="taste-image">
+          <source 
+            srcset="
+              /img/taste/chocolate-desktop.png    1x
+              /img/taste/chocolate-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source 
+            srcset="
+              /img/taste/chocolate-mobile.png    1x
+              /img/taste/chocolate-mobile@2x.png 2x
+              "
+              media="(max-width: 1200px)"
+          />
+          <img 
+            src="/img/taste/chocolate-mobile.png"
+            alt="Chocolate"
+          />
+        </picture>
+
+        <h3 class="description-white">MILK CHOCOLATE</h3>
+
+        
+
       </li>
       <li class="taste-list-milk">
-        <img
+
+        <!-- <img
               srcset="../img/taste/milk-mobile.png 224w, ../img/taste/milk-mobile@2x.png 448w"
               sizes="224px"
               src="../img/taste/milk-mobile.png"
               alt="Milk"
-            />
+            /> -->
+
+            <picture class="taste-image">
+              <source 
+                srcset="
+                  /img/taste/milk-desktop.png    1x
+                  /img/taste/milk-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source 
+                srcset="
+                  /img/taste/milk-mobile.png    1x
+                  /img/taste/milk-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              <img 
+                src="/img/taste/milk-mobile.png"
+                alt="Milk"
+              />
+            </picture>
+
             <h3 class="description-black">MILK</h3>
       </li>
       <li class="taste-list-nuts">
-        <img
+
+        <!-- <img
               srcset="../img/taste/nuts-mobile.png 224w, ../img/taste/nuts-mobile@2x.png 448w"
               sizes="224px"
               src="../img/taste/nuts-mobile.png"
               alt="Nuts"
-            />
+            /> -->
+
+            <picture class="taste-image">
+              <source 
+                srcset="
+                  /img/taste/nuts-desktop.png    1x
+                  /img/taste/nuts-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source 
+                srcset="
+                  /img/taste/nuts-mobile.png    1x
+                  /img/taste/nuts-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              <img 
+                src="/img/taste/nuts-mobile.png"
+                alt="Nuts"
+              />
+            </picture>
+
             <h3 class="description-white">NUTS</h3>
       </li>
       <li class="taste-list-glaze">
-        <img
+        
+        <!-- <img
               srcset="../img/taste/glaze-mobile.png 224w, ../img/taste/glaze-mobile@2x.png 448w"
               sizes="224px"
               src="../img/taste/glaze-mobile.png"
               alt="Glaze"
-            />
+            /> -->
+
+            <picture class="taste-image">
+              <source 
+                srcset="
+                  /img/taste/glaze-desktop.png    1x
+                  /img/taste/glaze-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source 
+                srcset="
+                  /img/taste/glaze-mobile.png    1x
+                  /img/taste/glaze-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              <img 
+                src="/img/taste/glaze-mobile.png"
+                alt="Glaze"
+              />
+            </picture>
+
             <h3 class="description-black">SEMI-SWEET CHOCOLATE</h3>
       </li>
     </ul>
