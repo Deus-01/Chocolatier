@@ -6,11 +6,13 @@ button {
   line-height: 1.21;
   color: var(--button-text);
   border-radius: 100px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-buy {
   border-color: transparent;
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-buy:hover,
@@ -25,6 +27,7 @@ button {
   color: var(--button-text);
   background-color: transparent;
   border: 1px solid var(--button-text);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-how:hover,
@@ -37,6 +40,7 @@ button {
   color: var(--main-color);
   background-color: var(--bgcolor);
   border: 1px solid #fd9222;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-leave:hover,
@@ -50,4 +54,5 @@ button {
   border-color: transparent;
   background-color: var(--accent-color);
   font-size: 18px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
