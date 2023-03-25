@@ -1,0 +1,31 @@
+button {
+  padding: 12px 28px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--button-text);
+  border-radius: 100px;
+}
+
+.button-buy {
+  border-color: transparent;
+  background: var(--accent-color);
+}
+
+.button-how {
+  color: var(--button-text);
+  background: transparent;
+  border: 1px solid var(--button-text);
+}
+
+.button-leave {
+  background: var(--bgcolor);
+  border: 1px solid #fd9222;
+}
+
+.button-subscr {
+  border-color: transparent;
+  background: var(--accent-color);
+  font-size: 18px;
+}

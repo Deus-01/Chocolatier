@@ -14,6 +14,7 @@
 @import url('./chocolate.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./button.css');
 @import url('./form.css');
 
 :root {
@@ -26,6 +27,8 @@
   --main-color: #111111;
   --accent-color: #fd9222;
   --products-text: rgba(17, 17, 17, 0.7);
+  --bgcolor: #331d1d;
+  --button-text: #ffffff;
 }
 
 .hidden {
@@ -46,6 +49,7 @@ body {
   color: var(--main-color);
   line-height: 1.29;
   letter-spacing: -0.02em;
+  background-color: var(--bgcolor);
 }
 
 .section {
