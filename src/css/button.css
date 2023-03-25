@@ -14,7 +14,9 @@ button {
 }
 
 .button-buy:hover,
-.button-subscr:hover {
+.button-subscr:hover,
+.button-buy:focus,
+.button-subscr:focus {
   color: var(--accent-color);
   background-color: #fcf1e0;
 }
@@ -25,7 +27,8 @@ button {
   border: 1px solid var(--button-text);
 }
 
-.button-how:hover {
+.button-how:hover,
+.button-how:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -36,7 +39,8 @@ button {
   border: 1px solid #fd9222;
 }
 
-.button-leave:hover {
+.button-leave:hover,
+.button-leave:focus {
   color: var(--button-text);
   background-color: #fd9222;
 }
