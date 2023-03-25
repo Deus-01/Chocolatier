@@ -35,7 +35,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .subscribe-descr {
-    width: 100%;
+    width: 291px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -46,10 +46,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .subscribe-text {
-    width: 100%;
+    width: 326px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -64,6 +66,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .subscribe-button {
+    display: block;
     font-family: inherit;
     font-style: normal;
     font-weight: 600;
