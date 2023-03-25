@@ -50,7 +50,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .subscribe-text {
     width: 326px;
-    font-size: 14px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
@@ -63,7 +62,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     display: block;
     font-family: inherit;
     font-weight: 600;
-    font-size: 14px;
     line-height: 1.21;
     color: #FFFFFF;
 
