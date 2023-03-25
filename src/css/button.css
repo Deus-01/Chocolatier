@@ -10,23 +10,40 @@ button {
 
 .button-buy {
   border-color: transparent;
-  background: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.button-buy:hover,
+.button-subscr:hover {
+  color: var(--accent-color);
+  background-color: #fcf1e0;
 }
 
 .button-how {
   color: var(--button-text);
-  background: transparent;
+  background-color: transparent;
   border: 1px solid var(--button-text);
 }
 
+.button-how:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .button-leave {
-  background: var(--bgcolor);
+  color: var(--main-color);
+  background-color: var(--bgcolor);
   border: 1px solid #fd9222;
+}
+
+.button-leave:hover {
+  color: var(--button-text);
+  background-color: #fd9222;
 }
 
 .button-subscr {
   padding: 14px 40px;
   border-color: transparent;
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   font-size: 18px;
 }
