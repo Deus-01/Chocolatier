@@ -25,6 +25,7 @@ button {
 }
 
 .button-subscr {
+  padding: 14px 40px;
   border-color: transparent;
   background: var(--accent-color);
   font-size: 18px;
