@@ -1,0 +1,105 @@
+/* Top-sellerc container styles*/
+.topsellers-container{
+    padding-top: 32px;
+}
+
+@media(max-width: 767px){
+    .topsellers-container{
+        position: relative;
+        padding-top: 50px;
+    }
+}
+/* top-sellers list styles */
+.topsellers-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 142px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 768px){
+    .topsellers-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+.topseller-item{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media(max-width: 1199px) {
+    .topseller-hidden-item {
+        display: none;
+    }
+}
+
+
+/* top-sellers images styles */
+.topseller-image{
+    display: block;
+    width: 100%;
+    max-width: 335px;
+    height: auto;
+}
+
+@media(min-width: 768px){
+    .topseller-image {
+        max-width: 344px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .topseller-image {
+        max-width: 368px;        
+    }
+}
+
+
+/* topsellers-info styles */
+@media (min-width: 768px){
+    .topsellers-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .topsellers-description{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+    .topsellers-description {
+        top: 516px;
+        left: 0;
+        transform: none;
+    }
+}
+@media (min-width: 768px) {
+    .topsellers-description {
+        flex-basis: 306px; 
+    }
+}
+@media (min-width: 1200px) {
+    .topsellers-description {
+        flex-basis: 407px;
+    }
+}
+
+.topsellers-button {
+    text-align: center;
+}
+
+
+
