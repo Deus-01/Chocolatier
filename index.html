@@ -19,7 +19,7 @@
     />
     
     <script type="module" crossorigin src="/Chocolatier/assets/index-5e3c73a4.js"></script>
-    <link rel="stylesheet" href="/Chocolatier/assets/index-286e2998.css">
+    <link rel="stylesheet" href="/Chocolatier/assets/index-58cd9e3f.css">
   </head>
   <body>
     <main>
@@ -356,64 +356,44 @@
 </section>
 
       <section class="section topsellers-section">
-  <div class="container topsellers-container">
+  <div class="container">
     <h2 class="section-title"><span class="title-accent">Top </span>Sellers</h2>
-    <ul class="topsellers-list">
-      <li class="topseller-item">
-        <picture class="topseller-image">
-          <source
-            srcset="/Chocolatier/assets/coffee-desktop-5bccadc9.jpg 1x, /Chocolatier/assets/coffee-desktop@2x-4e78e595.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="/Chocolatier/assets/coffee-tablet-4cdaaf68.jpg 1x, /Chocolatier/assets/coffee-tablet@2x-638ae530.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/Chocolatier/assets/coffee-mobile-c9b95941.jpg 1x, /Chocolatier/assets/coffee-mobile@2x-55629322.jpg 2x"
-            media="(max-width: 767px)"
-          />
-          <img
-            src="/Chocolatier/assets/coffee-mobile-c9b95941.jpg"
-            alt="Chocolate with coffee beans"
-          />
-        </picture>
-      </li>
-      <li class="topseller-item">
-        <picture class="topseller-image">
-          <source
-            srcset="/Chocolatier/assets/mint-desktop-ccbf79f1.jpg 1x, /Chocolatier/assets/mint-desktop@2x-bf644ed7.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="/Chocolatier/assets/mint-tablet-b8db5f95.jpg 1x, /Chocolatier/assets/mint-tablet@2x-560075ef.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/Chocolatier/assets/mint-mobile-2c7f4d4d.jpg 1x, /Chocolatier/assets/mint-mobile@2x-2a7b722c.jpg 2x"
-            media="(max-width: 767px)"
-          />
-          <img src="/Chocolatier/assets/mint-mobile-2c7f4d4d.jpg" alt="Milk chocolate with mint" />
-        </picture>
-      </li>
-      <li class="topseller-item">
-        <!-- this img is present on the desktop version only, so there's no point to use picture; will be hidden on mobile and tablet with CSS -->
-        <img
-          class="topseller-image"
-          srcset="/Chocolatier/assets/candy-desktop-4a697d99.jpg 1x, /Chocolatier/assets/candy-desktop@2x-6a1fd1a6.jpg 2x"
-          src="/Chocolatier/assets/candy-desktop-4a697d99.jpg"
-          alt="Chocolate bars"
-        />
-      </li>
-    </ul>
-    <div class="topsellers-info">
-      <p class="topsellers-description">
-        Crazy enough chocolate originates from a bean just like the coffee bean
-        called Cacao. Cacao has been around for thousands of years and was first
-        discovered by the Native American tribe called the Mayans.
-      </p>
-      <button type="button" class="button" js-open-modal>Buy now</button>
+    <div class="topsellers-container">
+        <ul class="topsellers-list">
+            <li class="topseller-item">
+                <picture class="topseller-image">
+                    <source srcset="/Chocolatier/assets/coffee-desktop-5bccadc9.jpg 1x, /Chocolatier/assets/coffee-desktop@2x-4e78e595.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="/Chocolatier/assets/coffee-tablet-4cdaaf68.jpg 1x, /Chocolatier/assets/coffee-tablet@2x-638ae530.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="/Chocolatier/assets/coffee-mobile-c9b95941.jpg 1x, /Chocolatier/assets/coffee-mobile@2x-55629322.jpg 2x" media="(max-width: 767px)" />
+                    <img src="/Chocolatier/assets/coffee-mobile-c9b95941.jpg" alt="Chocolate with coffee beans" />
+                </picture>
+            </li>
+            <li class="topseller-item">
+                <picture class="topseller-image">
+                    <source srcset="/Chocolatier/assets/mint-desktop-ccbf79f1.jpg 1x, /Chocolatier/assets/mint-desktop@2x-bf644ed7.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="/Chocolatier/assets/mint-tablet-b8db5f95.jpg 1x, /Chocolatier/assets/mint-tablet@2x-560075ef.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="/Chocolatier/assets/mint-mobile-2c7f4d4d.jpg 1x, /Chocolatier/assets/mint-mobile@2x-2a7b722c.jpg 2x" media="(max-width: 767px)" />
+                    <img src="/Chocolatier/assets/mint-mobile-2c7f4d4d.jpg" alt="Milk chocolate with mint" />
+                </picture>
+            </li>
+            <li class="topseller-item  topseller-hidden-item">
+                <!-- this img is present on the desktop version only, so there's no point to use picture; will be hidden on mobile and tablet with CSS -->
+                <img class="topseller-image" srcset="/Chocolatier/assets/candy-desktop-4a697d99.jpg 1x, /Chocolatier/assets/candy-desktop@2x-6a1fd1a6.jpg 2x" src="/Chocolatier/assets/candy-desktop-4a697d99.jpg" alt="Chocolate bars" />
+            </li>
+        </ul>
+        <div class="topsellers-info">
+            <p class="topsellers-description">
+                Crazy enough chocolate originates from a bean just like the coffee bean
+                called Cacao. Cacao has been around for thousands of years and was first
+                discovered by the Native American tribe called the Mayans.
+            </p>
+            <div class="topsellers-button">
+                <button type="button" class="button button-buy" js-open-modal>Buy now</button>
+            </div>
+            
+        </div>
     </div>
+    
   </div>
 </section>
 
