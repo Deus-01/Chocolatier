@@ -11,9 +11,10 @@
         
      
      }
-     .section .container{
-         padding: 0;
+     .section section-offer{
+        padding-bottom: 36px;
      }
+    
      
      .offer-icon{
          box-sizing: border-box;
