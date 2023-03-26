@@ -1,12 +1,26 @@
-/* Top-sellerc container styles*/
-.topsellers-container{
+/* ---------Top-sellers container styles------------*/
+/* mobile */
+.topsellers-container-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     padding-top: 32px;
 }
+@media (min-width: 768px){
+    .topsellers-container-mobile {
+        display: none;
+    }
+}
 
+
+/* desktop */
 @media(max-width: 767px){
     .topsellers-container{
-        position: relative;
+        display: none;
     }
+}
+.topsellers-container {
+    padding-top: 32px;
 }
 @media(min-width: 768px){
     .topsellers-container {
@@ -15,48 +29,49 @@
 }
 
 
-/* top-sellers list styles */
+/* -----------top-sellers list styles -------------*/
 .topsellers-list{
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     align-items: center;
-    gap: 142px;
+    gap: 32px;
 
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 32px;
+    
 }
-@media (max-width: 374px) {
-    .topsellers-list {
-        gap: 158px;
-    }
-}
+
 @media (min-width: 768px){
     .topsellers-list {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 16px;
+        margin-bottom: 32px;
     }
 }
 
 .topseller-item{
-    border-radius: 15px;
     overflow: hidden;
 }
 
-@media(max-width: 1199px) {
-    .topseller-hidden-item {
+@media (max-width: 1199px){
+    .topseller-item-hidden{
         display: none;
+    }
+}
+@media (min-width: 767px) {
+    .topseller-item {
+        border-radius: 15px;
     }
 }
 
 
+
 /* top-sellers images styles */
 .topseller-image{
-    display: block;
-    width: 100%;
-    max-width: 335px;
     height: auto;
+    border-radius: 15px;
 }
 
 @media(min-width: 768px){
@@ -81,28 +96,13 @@
 }
 
 
-@media (max-width: 767px) {
-    .topsellers-description{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
+.topsellers-container-mobile .topsellers-description {
+    padding-top: 20px;
+    max-width: 100%;
 }
-@media (max-width: 374px){
-    .topsellers-description {
-        top: 50%;
-            left: 0;
-            transform: translateY(-60%);
-    }
-}
-@media (min-width: 375px) and (max-width: 767px) {
-    .topsellers-description {
-        top: 516px;
-        left: 0;
-        transform: none;
-    }
-}
+
+
+
 @media (min-width: 768px) {
     .topsellers-description {
         flex-basis: 306px; 
@@ -113,10 +113,14 @@
         flex-basis: 407px;
     }
 }
+ @media (max-width: 767px){
+    .topsellers-button {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+    }
+ }
 
-.topsellers-button {
-    text-align: center;
-}
 
 
 
