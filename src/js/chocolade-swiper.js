@@ -3,14 +3,45 @@ $(document).ready(function (){
     arrows: false,
     dots: true,
     infinite: false,
-  slidesToShow: 3,
-  slidesToScroll: 1
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1500,
+  
+    responsive: [
+    {
+        // when window width is >= 480px
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          spaceBetween: 20
+        }
+      },
+      {
+        // when window width is >= 768px
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          spaceBetween: 20
+          
+        }
+      },
+      {
+        // when window width is >= 1200px
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          spaceBetween: 40
+        }
+      }
+    ],
+    mobileFirst: true
   });
 });
 
 
 
 
+ 
 
 
 
@@ -28,44 +59,3 @@ $(document).ready(function (){
 
 
 
-
-
-
-
-
-// const swiper = new Swiper(".chocolate-slider", {
-//   // Optional parameters
-
-//   loop: false,
-
-//   // If we need pagination
-//   pagination: {
-//     el: ".chocolate-swiper-pagination",
-//     clickable: true,
-//     dynamicBullets: false,
-//   },
-
-  
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//     // autoplay: {
-//     //   delay: 5000,
-//     //   disableOnInteraction: false,
-//     //   stopOnLastSlide: false,
-
-//     // },
-//   speed: 1500,
-//     breakpoints: {
-//       // when window width is >= 320px
-//       768: {
-//         slidesPerView: 2,
-//         spaceBetween: 20
-//       },
-//       // when window width is >= 480px
-//       1200: {
-//         slidesPerView: 3,
-//         spaceBetween: 30
-//       },
-     
-//     }
-// });
