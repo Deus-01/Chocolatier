@@ -1,4 +1,4 @@
-p{
+.taste-details-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -119,6 +119,7 @@ li{
     overflow-y: scroll;
     height: 146px;
     margin-top: 14px;
+    text-align: start;
 }
 
 img{
