@@ -58,6 +58,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     margin-left: auto;
 }
 
+.subscribe-wrap .button-subscr {
+    display: block;
+    padding: 12px 28px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (min-width: 768px) {
     .subscribe-section {
         padding-top: 72px;
@@ -74,6 +82,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
     .subscribe-text {
         width: 467px;
+    }
+
+    .subscribe-wrap .button-subscr {
+        display: block;
+        padding: 14px 40px;
+        font-size: 18px;
+        line-height: 1.22;
     }
 
 }
