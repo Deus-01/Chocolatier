@@ -35,6 +35,10 @@
     color: var(--button-text);
   }
 
+  .footer-contacts-main {
+    display: flex;
+  }
+
 .footer-social {
   display: flex;
 }
