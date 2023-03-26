@@ -93,8 +93,6 @@ li{
 
 
 
-
-
 @media{
 .overlay{
     position: absolute;
@@ -145,19 +143,8 @@ img{
     overflow: hidden;
 }
 }
-
-@media screen and (min-width: 375px) {
-    .container {
-      width: 335px;
-    }
-    
-  }
   
 @media screen and (min-width: 768px) {
-.container {
-    width: 704px;
-    padding: 0 32px;
-}
 .overlay{
     width: 336px;
 }
@@ -194,9 +181,6 @@ img{
 }
 
 @media screen and (min-width: 1200px) {
-.container {
-    width: 1136px;
-}
 .overlay{
     width: 270px;
 }
