@@ -64,7 +64,7 @@
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-a {
+.form a {
   padding: 20px;
   display: inline-block;
   text-decoration: none;
