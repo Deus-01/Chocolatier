@@ -58,31 +58,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     margin-left: auto;
 }
 
-.subscribe-button {
-    display: block;
-    font-family: inherit;
-    font-weight: 600;
-    line-height: 1.21;
-    color: #FFFFFF;
-
-    background-color: var(--accent-color);
-    border: 0px;
-    border-radius: 100px;
-
-    cursor: pointer;
-
-    padding: 12px 28px;
-
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-    color: var(--accent-color);
-    background-color: #FCF1E0;
-}
-
 @media screen and (min-width: 768px) {
     .subscribe-section {
         padding-top: 72px;
