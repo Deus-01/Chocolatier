@@ -6,9 +6,15 @@
 @media(max-width: 767px){
     .topsellers-container{
         position: relative;
+    }
+}
+@media(min-width: 768px){
+    .topsellers-container {
         padding-top: 50px;
     }
 }
+
+
 /* top-sellers list styles */
 .topsellers-list{
     display: flex;
@@ -20,7 +26,11 @@
     margin-left: auto;
     margin-bottom: 32px;
 }
-
+@media (max-width: 374px) {
+    .topsellers-list {
+        gap: 158px;
+    }
+}
 @media (min-width: 768px){
     .topsellers-list {
         flex-direction: row;
@@ -77,6 +87,13 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+}
+@media (max-width: 374px){
+    .topsellers-description {
+        top: 50%;
+            left: 0;
+            transform: translateY(-60%);
     }
 }
 @media (min-width: 375px) and (max-width: 767px) {
