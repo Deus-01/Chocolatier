@@ -1,0 +1,144 @@
+@media screen and (max-width: 767px) {
+  .how-made-container {
+    width: 375px;
+  }
+  .how-made-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .how-made-subtitle {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .list-style {
+    list-style-type: disc;
+  }
+  .how-made-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 335px;
+    height: 500px;
+  }
+  .how-made-flex {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .how-made-flex-text {
+    width: 295px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .how-made-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  .list-style {
+    list-style-type: disc;
+  }
+  .how-made-video {
+    border-radius: 15px;
+  }
+  .how-made-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .how-made-list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .how-made-list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .how-made-container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .how-made-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .how-made-video {
+    width: 614px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .how-made-subtitle {
+    width: 340px;
+  }
+  .list-style {
+    padding-left: 16px;
+  }
+  .how-made-list-item {
+    width: 464px;
+  }
+  .how-made-subtitle {
+    margin-top: 52px;
+    margin-bottom: 28px;
+  }
+  .how-made-flex-text {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .how-made-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-made-container {
+    width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .how-made-flex {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .how-made-flex-text {
+    width: 516px;
+    height: 400px;
+    padding-top: 32px;
+    margin-left: 20px;
+  }
+  .how-made-video {
+    width: 600px;
+    height: 400px;
+  }
+  .how-made-subtitle {
+    width: 340px;
+    padding-left: 32px;
+    margin-bottom: 28px;
+  }
+  .how-made-list-item {
+    width: 410px;
+    margin-bottom: 24px;
+  }
+  .list-style {
+    padding-left: 48px;
+  }
+}
