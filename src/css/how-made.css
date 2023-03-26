@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
-  .how-made-container {
-    width: 375px;
+  .container {
+    max-width: 335px;
   }
   .how-made-title {
     font-weight: 600;
@@ -19,28 +19,16 @@
     list-style-type: disc;
   }
   .how-made-video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 335px;
+    width: 100%;
     height: 500px;
   }
-  .how-made-flex {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .how-made-flex-text {
-    width: 295px;
+  .how-made-text-container {
+    max-width: 295px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 375px) {
-  .how-made-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-  }
+@media screen and (min-width: 200px) {
   .list-style {
     list-style-type: disc;
   }
@@ -64,11 +52,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .how-made-container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
   .how-made-title {
     font-weight: 600;
     font-size: 24px;
@@ -97,7 +80,7 @@
     margin-top: 52px;
     margin-bottom: 28px;
   }
-  .how-made-flex-text {
+  .how-made-text-container {
     width: 550px;
     margin-left: auto;
     margin-right: auto;
@@ -109,17 +92,12 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .how-made-container {
-    width: 1200px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
   .how-made-flex {
     margin-left: auto;
     margin-right: auto;
     display: flex;
   }
-  .how-made-flex-text {
+  .how-made-text-container {
     width: 516px;
     height: 400px;
     padding-top: 32px;
