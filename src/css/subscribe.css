@@ -35,7 +35,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .subscribe-descr {
-    width: 291px;
+    max-width: 291px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -49,7 +49,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .subscribe-text {
-    width: 326px;
+    max-width: 326px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
