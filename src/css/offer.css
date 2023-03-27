@@ -108,7 +108,10 @@ text-align: left;
    
         padding-top: 50px;
         padding-bottom: 50px;
+     }
+     .offer-section .container{
         padding-left: 32px;
+
      }
 
 .offer-list{
