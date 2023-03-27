@@ -3,37 +3,341 @@
 
   <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
   <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
+  <a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
+  <a href="#" class="js-open-modal" data-modal="4">Открыть окно 4</a>
+  <a href="#" class="js-open-modal" data-modal="5">Открыть окно 5</a>
 
   <!-- Несколько модальных окон -->
 
   <div class="modal" data-modal="1">
     <!--   Svg иконка для закрытия окна  -->
-    <svg
-      class="modal__cross js-modal-close"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
+    <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
+      <use href="./img/icons.svg#x-close-mob"></use>
     </svg>
-    <p class="modal__title">Заголовок окна 1</p>
+
+    <h2 class="section-title"><span class="title-accent">BUY </span>NOW</h2>
+    <div class="swiper image-slider">
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <li class="swiper-slide">
+          <div class="image-wrapper">
+            <picture class="modal-image">
+              <source
+                srcset="
+                  /img/modal/100g-mobile.jpg    1x,
+                  /img/modal/100g-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  /img/modal/100g.jpg           1x,
+                  /img/modal/100g-mobile@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img src="/img/modal/100g.jpg" alt="Buy some chocolate" />
+            </picture>
+            <div class="products-box">
+              <button type="button" class="products-button">100 g</button>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="image-wrapper">
+            <picture class="modal-image">
+              <source
+                srcset="
+                  /img/modal/200g-mobile.jpg    1x,
+                  /img/modal/200g-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  /img/modal/200g.jpg           1x,
+                  /img/modal/200g-mobile@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img src="/img/modal/200g.jpg" alt="Buy some chocolate" />
+            </picture>
+            <div class="products-box">
+              <button type="button" class="products-button">200 g</button>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="image-wrapper">
+            <picture class="modal-image">
+              <source
+                srcset="
+                  /img/modal/300g-mobile.jpg    1x,
+                  /img/modal/300g-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  /img/modal/300g.jpg           1x,
+                  /img/modal/300g-mobile@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img src="/img/modal/300g.jpg" alt="Buy some chocolate" />
+            </picture>
+            <div class="products-box">
+              <button type="button" class="products-button">300 g</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form class="form-container">
+      <div class="form-item">
+        <label class="label-item" for="user-name">Personal information</label>
+        <input
+          class="input-item"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-surname"></label>
+        <input
+          class="input-item"
+          type="text"
+          name="user-rurname"
+          id="user-surname"
+          placeholder="Surname"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-mail">Email</label>
+        <input
+          class="input-item"
+          type="email"
+          name="user-mail"
+          id="user-mail"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-phone">Phone number</label>
+
+        <svg class="ua-flag">
+          <use href="./img/icons.svg#ukraine"></use>
+        </svg>
+        <input
+          class="input-item"
+          type="tel"
+          name="user-phone"
+          id="user-phone"
+          placeholder="Phone number"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-card">Card number</label>
+
+        <svg class="ua-flag">
+          <use href="./img/icons.svg#mastercard"></use>
+        </svg>
+        <input
+          class="input-item"
+          type="number"
+          name="user-card"
+          id="user-phone"
+          placeholder="Enter card"
+        />
+      </div>
+      <div class="form-item">
+        <label for="comment">Comment</label>
+        <textarea
+          class="input-comment"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="submit-btn" type="submit">
+        <span class="submit-btn-text">Submit</span>
+      </button>
+    </form>
   </div>
 
+  <!-- Modal 2 -->
   <div class="modal" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
-    <svg
-      class="modal__cross js-modal-close"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
+    <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
+      <use href="./img/icons.svg#x-close-mob"></use>
     </svg>
-    <p class="modal__title">Заголовок окна 2</p>
+
+    <h2 class="section-title">
+      LEAVE A REVIEW ABOUT <span class="title-accent">OUR CHOCOLATE</span>
+    </h2>
+    <form class="form-container">
+      <div class="form-item">
+        <label class="label-item" for="user-name"></label>
+        <input
+          class="input-item"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-mail"></label>
+        <input
+          class="input-item"
+          type="email"
+          name="user-mail"
+          id="user-mail"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-phone"></label>
+        <input
+          class="input-item"
+          type="tel"
+          name="user-phone"
+          id="user-phone"
+          placeholder="Phone number"
+        />
+
+        <svg class="ua-flag">
+          <use href="./img/icons.svg#ukraine"></use>
+        </svg>
+      </div>
+      <div class="form-item">
+        <label for="comment">Comment</label>
+        <textarea
+          class="input-comment"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="submit-btn" type="submit">
+        <span class="submit-btn-text">Send</span>
+      </button>
+    </form>
+  </div>
+
+  <div class="modal" data-modal="3">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
+      <use href="./img/icons.svg#x-close-mob"></use>
+    </svg>
+
+    <picture class="modal-subscribe-image">
+      <source
+        srcset="
+          /img/modal/subscr-mobile.jpg    1x,
+          /img/modal/subscr-mobile@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/img/modal/subscr.jpg 1x, /img/modal/subscr@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+
+      <img src="/img/modal/subscr.jpg" alt="Buy some chocolate" />
+    </picture>
+    <h2 class="section-title">
+      EXPLORE OUR <span class="title-accent">NEW CHOCOLATE</span> FIRST
+    </h2>
+    <form class="form-container">
+      <div class="form-item">
+        <label class="label-item" for="user-mail"></label>
+        <input
+          class="input-item"
+          type="email"
+          name="user-mail"
+          id="user-mail"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-item">
+        <label class="label-item" for="user-phone"></label>
+        <input
+          class="input-item"
+          type="tel"
+          name="user-phone"
+          id="user-phone"
+          placeholder="Phone number"
+        />
+      </div>
+      <button class="submit-btn" type="submit">
+        <span class="submit-btn-text">Submit</span>
+      </button>
+    </form>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal" data-modal="4">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
+      <use href="./img/icons.svg#x-close-mob"></use>
+    </svg>
+
+    <h2 class="section-title modal-thanks-title">THANK YOU!</h2>
+    <p class="modal-thanks-text">
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
+    <picture class="modal-thanks-image">
+      <source
+        srcset="
+          /img/modal/thank-you-mobile.jpg    1x,
+          /img/modal/thank-you-mobile@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/img/modal/thank-you.jpg 1x, /img/modal/thank-you@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+
+      <img src="/img/modal/thank-you.jpg" alt="Buy some chocolate" />
+    </picture>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal" data-modal="5">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
+      <use href="./img/icons.svg#x-close-mob"></use>
+    </svg>
+
+    <h2 class="section-title modal-thanks-title">
+      THANK YOU FOR YOUR FEEDBACK!
+    </h2>
+    <p class="modal-thanks-text">We are so happy to hear from you!</p>
+    <picture class="modal-thanks-image">
+      <source
+        srcset="
+          /img/modal/thank-you-mobile.jpg    1x,
+          /img/modal/thank-you-mobile@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/img/modal/thank-you.jpg 1x, /img/modal/thank-you@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+
+      <img src="/img/modal/thank-you.jpg" alt="chocolate" />
+    </picture>
   </div>
 
   <!-- Подложка под модальным окном -->
-  <div class="modal-overlay js-overlay-modal"></div>
+  <div class="overlay js-overlay-modal"></div>
 </section>
