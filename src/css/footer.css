@@ -18,7 +18,7 @@
     align-items:center;
     justify-content: space-between;
 
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 }
 
@@ -55,6 +55,7 @@
 @media screen and (min-width: 768px) {
   .footer-address {
     margin-bottom: 0;
+    margin-right: 65px;
   }
 }
 
@@ -72,12 +73,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-address {
-    margin-right: 50px;
-  }
 }
 
 .footer-contact {
@@ -103,6 +98,18 @@
 
 .footer-social-item:last-child {
   margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-item {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-social-link {
