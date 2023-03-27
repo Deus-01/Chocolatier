@@ -60,14 +60,27 @@
 }
 
 
-.image-chocolate{
-   
-   position: relative;
-   
-   top: 40px;
-   right: -135px;
-  
+.image-chocolate {
+
+    position: relative;
+
+    top: 40px;
+    right: -115px;
+
 }
+
+@media (min-width:768px) {
+    .image-chocolate {
+        right: -125px;
+    }
+}
+
+@media (min-width:1200px) {
+    .image-chocolate {
+        right: -135px;
+    }
+}
+
 .button-leave{
     margin-right: auto;
         margin-left: auto;
