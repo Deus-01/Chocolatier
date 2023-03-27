@@ -1,6 +1,6 @@
 /* Стили для подложки */
 
-.modal-overlay {
+.overlay {
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
@@ -45,7 +45,7 @@
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
-.overlay.active {
+.modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
