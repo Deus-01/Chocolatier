@@ -14,8 +14,9 @@
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
       <use href="./img/icons.svg#x-close-mob"></use>
     </svg>
-
-    <h2 class="section-title"><span class="title-accent">BUY </span>NOW</h2>
+    <h2 class="section-title title-modal1">
+      <span class="title-accent">BUY </span>NOW
+    </h2>
     <div class="swiper image-slider">
       <ul class="swiper-wrapper">
         <!-- Slides -->
@@ -96,78 +97,78 @@
         </li>
       </ul>
     </div>
-    <form class="form-container">
-      <div class="form-item">
-        <label class="label-item" for="user-name">Personal information</label>
-        <input
-          class="input-item"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Name"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-surname"></label>
-        <input
-          class="input-item"
-          type="text"
-          name="user-rurname"
-          id="user-surname"
-          placeholder="Surname"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-mail">Email</label>
-        <input
-          class="input-item"
-          type="email"
-          name="user-mail"
-          id="user-mail"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-phone">Phone number</label>
-
-        <svg class="ua-flag">
-          <use href="/img/icons.svg#ukraine"></use>
-        </svg>
-        <input
-          class="input-item"
-          type="tel"
-          name="user-phone"
-          id="user-phone"
-          placeholder="Phone number"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-card">Card number</label>
-
-        <svg class="ua-flag">
-          <use href="/img/icons.svg#mastercard"></use>
-        </svg>
-        <input
-          class="input-item"
-          type="number"
-          name="user-card"
-          id="user-card"
-          placeholder="Enter card"
-        />
-      </div>
-      <div class="form-item">
-        <label for="comment">Comment</label>
-        <textarea
-          class="input-comment"
-          name="comment"
-          id="comment"
-          placeholder="Enter text"
-        ></textarea>
-      </div>
-      <button class="submit-btn" type="submit">
-        <span class="submit-btn-text">Submit</span>
-      </button>
-    </form>
+    <div class="modal-text-container">
+      <form class="form-container">
+        <div class="form-item">
+          <label class="label-item" for="user-name">Personal information</label>
+          <input
+            class="input-item"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="user-surname"></label>
+          <input
+            class="input-item"
+            type="text"
+            name="user-rurname"
+            id="user-surname"
+            placeholder="Surname"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="user-mail">Email</label>
+          <input
+            class="input-item"
+            type="email"
+            name="user-mail"
+            id="user-mail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="user-phone">Phone number</label>
+          <input
+            class="input-item pnone-input"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            placeholder="Phone number"
+          />
+          <svg class="ua-flag">
+            <use href="/img/icons.svg#ukraine"></use>
+          </svg>
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="user-card">Card number</label>
+          <input
+            class="input-item"
+            type="number"
+            name="user-card"
+            id="user-card"
+            placeholder="Enter card"
+          />
+          <svg class="mastercard-icn">
+            <use href="/img/icons.svg#mastercard"></use>
+          </svg>
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="comment">Comment</label>
+          <textarea
+            class="input-comment"
+            name="comment"
+            id="comment"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+        <button class="submit-btn" type="submit">
+          <span class="submit-btn-text">Submit</span>
+        </button>
+      </form>
+    </div>
   </div>
 
   <!-- Modal 2 -->
@@ -176,61 +177,63 @@
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
       <use href="/img/icons.svg#x-close-mob"></use>
     </svg>
-
-    <h2 class="section-title">
-      LEAVE A REVIEW ABOUT <span class="title-accent">OUR CHOCOLATE</span>
-    </h2>
-    <form class="form-container">
-      <div class="form-item">
-        <label class="label-item" for="user-name1"></label>
-        <input
-          class="input-item"
-          type="text"
-          name="user-name"
-          id="user-name1"
-          placeholder="Name"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-mail1"></label>
-        <input
-          class="input-item"
-          type="email"
-          name="user-mail"
-          id="user-mail1"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-phone1"></label>
-        <input
-          class="input-item"
-          type="tel"
-          name="user-phone"
-          id="user-phone1"
-          placeholder="Phone number"
-        />
-
-        <svg class="ua-flag">
-          <use href="/img/icons.svg#ukraine"></use>
-        </svg>
-      </div>
-      <div class="form-item">
-        <label for="comment1">Comment</label>
-        <textarea
-          class="input-comment"
-          name="comment"
-          id="comment1"
-          placeholder="Enter text"
-        ></textarea>
-      </div>
-      <button class="submit-btn" type="submit">
-        <span class="submit-btn-text">Send</span>
-      </button>
-    </form>
+    <div class="modal-text-container">
+      <h2 class="section-title">
+        LEAVE A REVIEW <br />
+        ABOUT <span class="title-accent">OUR CHOCOLATE</span>
+      </h2>
+      <form class="form-container">
+        <div class="form-item">
+          <label class="label-item" for="user-name1"></label>
+          <input
+            class="input-item"
+            type="text"
+            name="user-name"
+            id="user-name1"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="user-mail1"></label>
+          <input
+            class="input-item"
+            type="email"
+            name="user-mail"
+            id="user-mail1"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="user-phone1"></label>
+          <input
+            class="input-item"
+            type="tel"
+            name="user-phone"
+            id="user-phone1"
+            placeholder="Phone number"
+          />
+          <svg class="ua-flag">
+            <use href="/img/icons.svg#ukraine"></use>
+          </svg>
+        </div>
+        <div class="form-item">
+          <label class="label-item" for="comment1"></label>
+          <textarea
+            class="input-comment"
+            name="comment"
+            id="comment1"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+        <button class="submit-btn" type="submit">
+          <span class="submit-btn-text">Send</span>
+        </button>
+      </form>
+    </div>
   </div>
+
   <!-- Modal 3 -->
-  <div class="modal" data-modal="3">
+  <div class="modal modal-num3" data-modal="3">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
       <use href="/img/icons.svg#x-close-mob"></use>
@@ -251,48 +254,42 @@
 
       <img src="/img/modal/subscr.jpg" alt="Buy some chocolate" />
     </picture>
-    <h2 class="section-title">
-      EXPLORE OUR <span class="title-accent">NEW CHOCOLATE</span> FIRST
-    </h2>
-    <form class="form-container">
-      <div class="form-item">
-        <label class="label-item" for="user-mail2"></label>
-        <input
-          class="input-item"
-          type="email"
-          name="user-mail"
-          id="user-mail2"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div class="form-item">
-        <label class="label-item" for="user-phone2"></label>
-        <input
-          class="input-item"
-          type="tel"
-          name="user-phone"
-          id="user-phone2"
-          placeholder="Phone number"
-        />
-      </div>
-      <button class="submit-btn" type="submit">
-        <span class="submit-btn-text">Submit</span>
-      </button>
-    </form>
+    <div class="modal-text-container">
+      <h2 class="section-title">
+        EXPLORE OUR <br />
+        <span class="title-accent">NEW CHOCOLATE</span> FIRST!
+      </h2>
+      <form class="form-container form-modal3">
+        <div class="form-item">
+          <label for="user-mail2"></label>
+          <input
+            class="input-item input-modal3"
+            type="email"
+            name="user-mail"
+            id="user-mail2"
+            placeholder="Enter your email"
+          />
+        </div>
+        <button class="submit-btn" type="submit">
+          <span class="submit-btn-text">Submit</span>
+        </button>
+      </form>
+    </div>
   </div>
 
   <!-- Modal 4 -->
-  <div class="modal" data-modal="4">
+  <div class="modal modal-type3 modal-num4" data-modal="4">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
       <use href="/img/icons.svg#x-close-mob"></use>
     </svg>
-
-    <h2 class="section-title modal-thanks-title">THANK YOU!</h2>
-    <p class="modal-thanks-text">
-      We are glad that you ordered our chocolate and we are giving you a 20%
-      discount on all our products.
-    </p>
+    <div class="modal-text-section">
+      <h2 class="section-title modal-thanks-title">THANK YOU!</h2>
+      <p class="modal-thanks-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
     <picture class="modal-thanks-image">
       <source
         srcset="
@@ -311,16 +308,17 @@
   </div>
 
   <!-- Modal 5 -->
-  <div class="modal m-type3" data-modal="5">
+  <div class="modal modal-type3 modal-num5" data-modal="5">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close">
       <use href="/img/icons.svg#x-close-mob"></use>
     </svg>
-
-    <h2 class="section-title modal-thanks-title">
-      THANK YOU FOR YOUR FEEDBACK!
-    </h2>
-    <p class="modal-thanks-text">We are so happy to hear from you!</p>
+    <div class="modal-text-section">
+      <h2 class="section-title modal-thanks-title">
+        THANK YOU<br />FOR YOUR FEEDBACK!
+      </h2>
+      <p class="modal-thanks-text">We are so happy to hear<br />from you!</p>
+    </div>
     <picture class="modal-thanks-image">
       <source
         srcset="
