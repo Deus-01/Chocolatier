@@ -1,47 +1,47 @@
-
-
-.slick-track{
-    margin-top: 50px;
-    display: flex;
-    
+.slick-track {
+  margin-top: 50px;
+  display: flex;
 }
-.slick-list{
-    overflow: hidden;
+.slick-list {
+  overflow: hidden;
 }
 
 
 .slider .slick-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13px;
-    margin-top: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 31px;
 }
- 
- 
+.slick-slide {
+  margin-right: 30px;
+}
+
  .slick-slide:last-child {
      margin-right: 0;
  }
 
 .slider .slick-dots li {
-    list-style: none;
+  list-style: none;
 }
 .slider .slick-dots button {
-    font-size: 0;
-    padding: 0;
-    border-color: transparent;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    background: rgba(17, 17, 17, 0.1);
+  font-size: 0;
+  padding: 0;
+  border-color: transparent;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.1);
 }
 
-.slider .slick-dots li.slick-active button{
-    width: 28px;
-    height: 13px;
-    background: #FD9222;
-    border-radius: 32px;
+.slider .slick-dots li.slick-active button {
+  width: 28px;
+  height: 13px;
+  background: #fd9222;
+  border-radius: 32px;
 }
+
 
 .chocolate-box{
     
@@ -88,12 +88,9 @@
     }
 
 }
-
-
-
-
-
 .image-chocolate {
+  position: relative;
+
 
     position: relative;
 
@@ -112,14 +109,19 @@
     .image-chocolate {
         right: -140px;
     }
+
 }
 
-.button-leave{
-    margin-right: auto;
-        margin-left: auto;
-        display: flex;
-        margin-top: 50px;
+.button-leave {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  margin-top: 50px;
 }
+.chocolate-section {
+  padding-bottom: 128px;
+}
+
 .chocolate-section{
     padding-bottom: 128px;
 }
@@ -127,3 +129,4 @@
 .chocolate-title{
     margin-bottom: 24px;
 }
+

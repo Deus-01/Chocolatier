@@ -3,9 +3,12 @@
 
       main .offer-section {
         background-color: #1E1823;
-        padding-left: 20px;
         padding-top: 20px;
         padding-bottom: 36px;
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+     
      }
     
      
@@ -20,6 +23,10 @@
          justify-content: center;
          margin-bottom: 22px;
      
+     }
+
+     .offer-line{
+        display: none;
      }
 
      .offer-section .container{
@@ -58,6 +65,10 @@
 main .offer-section {
    
         padding-bottom: 36px;
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+     
      }
 
 .offer-icon{
@@ -108,7 +119,14 @@ text-align: left;
    
         padding-top: 50px;
         padding-bottom: 50px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+     
+     }
+     .offer-section .container{
         padding-left: 32px;
+
      }
 
 .offer-list{
@@ -135,6 +153,46 @@ text-align: left;
 
     }
     
+    @media screen and (min-width: 1200px) {
+
+        main .offer-section {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+         }
+         .offer-section .container{
+          padding: 0px 50px;  
+          width: 1100px;
+       }
+    
+
+        .offer-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .offer-list .offer-item{
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        .offer-list .offer-item:not(:last-child){
+            margin-right: 88px;
+        }
+        
+        .offer-line{
+            display: block;
+            fill:  rgba(255, 255, 255, 0.7);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(18px, -50%);
+        }
+    
+
+    }
 
 
 
