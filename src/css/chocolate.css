@@ -8,6 +8,8 @@
 .slick-list{
     overflow: hidden;
 }
+
+
 .slider .slick-dots {
     display: flex;
     justify-content: center;
@@ -15,11 +17,7 @@
     gap: 13px;
     margin-top: 31px;
 }
- .slick-slide {
-    
-     margin-right: 30px;
- }
-
+ 
  
  .slick-slide:last-child {
      margin-right: 0;
@@ -55,9 +53,44 @@
     padding-top: 56px;
     padding-bottom: 26px;
     padding-left: 24px;
-    padding-right: 24px;
-    min-height: 125px;
+    padding-right: 24px;      
 }
+
+@media (min-width:768px) {
+    .chocolate-box{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width:1200px) {
+    .chocolate-box {
+        padding-left: 24px;
+        padding-right: 24px;
+      
+    }
+}
+
+
+
+.special-box{
+    padding-bottom: 42px;
+}
+
+.chocolate-cont{
+    max-width: 335px;
+}
+
+
+@media (min-width:1200px) {
+    .chocolate-cont {
+        max-width: 360px;
+    }
+
+}
+
+
+
 
 
 .image-chocolate {
@@ -65,19 +98,19 @@
     position: relative;
 
     top: 40px;
-    right: -115px;
+    right: -125px;
 
 }
 
 @media (min-width:768px) {
     .image-chocolate {
-        right: -125px;
+        right: -130px;
     }
 }
 
 @media (min-width:1200px) {
     .image-chocolate {
-        right: -135px;
+        right: -140px;
     }
 }
 
@@ -89,4 +122,8 @@
 }
 .chocolate-section{
     padding-bottom: 128px;
+}
+
+.chocolate-title{
+    margin-bottom: 24px;
 }
