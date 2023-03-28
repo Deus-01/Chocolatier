@@ -19,7 +19,7 @@
     />
     
     <script type="module" crossorigin src="/Chocolatier/assets/index-ff1b8a78.js"></script>
-    <link rel="stylesheet" href="/Chocolatier/assets/index-8d01b402.css">
+    <link rel="stylesheet" href="/Chocolatier/assets/index-9734c08a.css">
   </head>
   <body>
     <main>
@@ -773,10 +773,10 @@
   <!-- Элементы для вызова модальных окон, могут быть любые -->
 
   <a href="#" class="js-open-modal" data-modal="1">Buy now</a>
-  <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
-  <a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
-  <a href="#" class="js-open-modal" data-modal="4">Открыть окно 4</a>
-  <a href="#" class="js-open-modal" data-modal="5">Открыть окно 5</a>
+  <a href="#" class="js-open-modal" data-modal="2">Leave a review</a>
+  <a href="#" class="js-open-modal" data-modal="3">Subscribe</a>
+  <a href="#" class="js-open-modal" data-modal="4">Thank you!</a>
+  <a href="#" class="js-open-modal" data-modal="5">Thanks for feedback</a>
 
   <!-- Несколько модальных окон -->
 
@@ -904,7 +904,7 @@
           class="input-item"
           type="number"
           name="user-card"
-          id="user-phone"
+          id="user-card"
           placeholder="Enter card"
         />
       </div>
@@ -935,32 +935,32 @@
     </h2>
     <form class="form-container">
       <div class="form-item">
-        <label class="label-item" for="user-name"></label>
+        <label class="label-item" for="user-name1"></label>
         <input
           class="input-item"
           type="text"
           name="user-name"
-          id="user-name"
+          id="user-name1"
           placeholder="Name"
         />
       </div>
       <div class="form-item">
-        <label class="label-item" for="user-mail"></label>
+        <label class="label-item" for="user-mail1"></label>
         <input
           class="input-item"
           type="email"
           name="user-mail"
-          id="user-mail"
+          id="user-mail1"
           placeholder="Enter your email"
         />
       </div>
       <div class="form-item">
-        <label class="label-item" for="user-phone"></label>
+        <label class="label-item" for="user-phone1"></label>
         <input
           class="input-item"
           type="tel"
           name="user-phone"
-          id="user-phone"
+          id="user-phone1"
           placeholder="Phone number"
         />
 
@@ -969,11 +969,11 @@
         </svg>
       </div>
       <div class="form-item">
-        <label for="comment">Comment</label>
+        <label for="comment1">Comment</label>
         <textarea
           class="input-comment"
           name="comment"
-          id="comment"
+          id="comment1"
           placeholder="Enter text"
         ></textarea>
       </div>
@@ -982,7 +982,7 @@
       </button>
     </form>
   </div>
-
+  <!-- Modal 3 -->
   <div class="modal" data-modal="3">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
@@ -1006,22 +1006,22 @@
     </h2>
     <form class="form-container">
       <div class="form-item">
-        <label class="label-item" for="user-mail"></label>
+        <label class="label-item" for="user-mail2"></label>
         <input
           class="input-item"
           type="email"
           name="user-mail"
-          id="user-mail"
+          id="user-mail2"
           placeholder="Enter your email"
         />
       </div>
       <div class="form-item">
-        <label class="label-item" for="user-phone"></label>
+        <label class="label-item" for="user-phone2"></label>
         <input
           class="input-item"
           type="tel"
           name="user-phone"
-          id="user-phone"
+          id="user-phone2"
           placeholder="Phone number"
         />
       </div>
@@ -1045,25 +1045,22 @@
     </p>
     <picture class="modal-thanks-image">
       <source
-        srcset="
-          /img/modal/thank-you-mobile.jpg    1x,
-          /img/modal/thank-you-mobile@2x.jpg 2x
-        "
+        srcset="/Chocolatier/assets/thank-you-mobile-ed7b0682.png 1x, /Chocolatier/assets/thank-you-mobile@2x-1135e79e.png 2x"
         media="(max-width: 767px)"
       />
       <source
-        srcset="/img/modal/thank-you.jpg 1x, /img/modal/thank-you@2x.jpg 2x"
+        srcset="/Chocolatier/assets/thank-you-be70551b.png 1x, /Chocolatier/assets/thank-you@2x-8686d7b4.png 2x"
         media="(min-width: 768px)"
       />
 
-      <img src="/img/modal/thank-you.jpg" alt="Buy some chocolate" />
+      <img src="/Chocolatier/assets/thank-you-be70551b.png" alt="Buy some chocolate" />
     </picture>
   </div>
 
   <!-- Modal 5 -->
-  <div class="modal" data-modal="5">
+  <div class="modal m-type3" data-modal="5">
     <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
+    <svg class="modal__cross js-modal-close">
       <use href="/Chocolatier/assets/icons-af3760da.svg#x-close-mob"></use>
     </svg>
 
@@ -1073,18 +1070,15 @@
     <p class="modal-thanks-text">We are so happy to hear from you!</p>
     <picture class="modal-thanks-image">
       <source
-        srcset="
-          /img/modal/thank-you-mobile.jpg    1x,
-          /img/modal/thank-you-mobile@2x.jpg 2x
-        "
+        srcset="/Chocolatier/assets/thank-you-mobile-ed7b0682.png 1x, /Chocolatier/assets/thank-you-mobile@2x-1135e79e.png 2x"
         media="(max-width: 767px)"
       />
       <source
-        srcset="/img/modal/thank-you.jpg 1x, /img/modal/thank-you@2x.jpg 2x"
+        srcset="/Chocolatier/assets/thank-you-be70551b.png 1x, /Chocolatier/assets/thank-you@2x-8686d7b4.png 2x"
         media="(min-width: 768px)"
       />
 
-      <img src="/img/modal/thank-you.jpg" alt="chocolate" />
+      <img src="/Chocolatier/assets/thank-you-be70551b.png" alt="chocolate" />
     </picture>
   </div>
 
