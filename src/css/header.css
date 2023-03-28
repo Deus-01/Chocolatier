@@ -289,6 +289,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 395px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 375px;
   }
 }
 
@@ -314,6 +319,10 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
+     max-width: 768px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 671px;
     background: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
@@ -345,6 +354,8 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
+    max-width: 1200px;
+    padding-top: 381px;
     background: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
@@ -411,8 +422,11 @@
   border-radius: 50%;
   width: 38px;
   height: 38px;
-  display: block;
-  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: var(--accent-color);
+  fill: var(--accent-color);
 }
 .svg-scroll {
   width: 22px;
