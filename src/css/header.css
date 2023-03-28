@@ -40,7 +40,6 @@
 .svg-logo {
   width: 21px;
   height: 21px;
-  display: blok;
   margin-top: 23.5px;
   margin-left: 4px;
 }
@@ -203,7 +202,6 @@
   height: 28px;
   top: 20px;
   right: 20px;
-
 }
 .button-close-menu:active {
   fill: var(--accent-color);
@@ -267,7 +265,7 @@
     rgba(17, 17, 17, 0) 0%,
     rgba(17, 17, 17, 0.4) 100%
   );
-  background-image: url("/img/hero/hero-mobile.jpg");
+  background-image: url('/img/hero/hero-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
@@ -287,7 +285,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     );
-    background-image: url("/img/hero/hero-mobile@2x.jpg");
+    background-image: url('/img/hero/hero-mobile@2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -305,7 +303,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     );
-    background-image: url("/img/hero/hero-tablet.jpg");
+    background-image: url('/img/hero/hero-tablet.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -321,7 +319,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     );
-    background-image: url("/img/hero/hero-tablet@2x.jpg");
+    background-image: url('/img/hero/hero-tablet@2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -336,7 +334,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     );
-    background-image: url("/img/hero/hero-desktop.jpg");
+    background-image: url('/img/hero/hero-desktop.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -352,7 +350,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     );
-    background-image: url("/img/hero/hero-desktop@2x.jpg");
+    background-image: url('/img/hero/hero-desktop@2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
