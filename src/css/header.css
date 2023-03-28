@@ -272,11 +272,12 @@
   background-size: cover;
   padding-top: 395px;
   padding-left: 20px;
+  padding-right:20px;
   padding-bottom: 20px;
   width: 100%;
   max-width: 375px;
 }
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
@@ -291,6 +292,7 @@
     background-size: cover;
     padding-top: 395px;
   padding-left: 20px;
+    padding-right:20px;
   padding-bottom: 20px;
   width: 100%;
   max-width: 375px;
@@ -302,6 +304,7 @@
     max-width: 768px;
     padding-left: 40px;
     padding-bottom: 40px;
+    padding-right:40px;
     padding-top: 671px;
     background: linear-gradient(
       180deg,
@@ -315,13 +318,14 @@
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
      max-width: 768px;
     padding-left: 40px;
     padding-bottom: 40px;
+    padding-right:40px;
     padding-top: 671px;
     background: linear-gradient(
       180deg,
@@ -350,7 +354,7 @@
   }
 }
 
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
@@ -387,6 +391,7 @@
   letter-spacing: -0.03em;
   color: var(--button-text);
   width: 299px;
+  margin-bottom:32px;
 }
 
 @media screen and (min-width: 768px) {
