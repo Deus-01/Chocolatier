@@ -5,6 +5,10 @@
         background-color: #1E1823;
         padding-top: 20px;
         padding-bottom: 36px;
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+     
      }
     
      
@@ -61,6 +65,10 @@
 main .offer-section {
    
         padding-bottom: 36px;
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+     
      }
 
 .offer-icon{
@@ -111,6 +119,10 @@ text-align: left;
    
         padding-top: 50px;
         padding-bottom: 50px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+     
      }
      .offer-section .container{
         padding-left: 32px;
@@ -144,7 +156,9 @@ text-align: left;
     @media screen and (min-width: 1200px) {
 
         main .offer-section {
-   
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
             padding-top: 50px;
             padding-bottom: 50px;
          }
