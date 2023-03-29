@@ -114,6 +114,10 @@
   padding-bottom: 36px;
 }
 
+.social-link:hover .svg-social-links {
+  stroke: var(--accent-color);
+}
+
 .svg-social-links {
   width: 24px;
   height: 24px;
@@ -159,6 +163,7 @@
   height: 100%;
   top: 0;
   right: 0;
+  z-index: 111;
 
   padding-top: 136px;
   padding-bottom: 136px;
@@ -261,6 +266,10 @@
   height: 24px;
   stroke: var(--button-text);
   fill: var(--bgmenu);
+}
+
+.social-link-mobile:hover .svg-social-links-mobile {
+  stroke: var(--accent-color);
 }
 
 /*Hero section */
@@ -416,7 +425,7 @@
     margin-bottom: 32px;
   }
   .button-how {
-    max-width: 161px;
+    max-width: 162px;
   }
 
   .button-buy {
