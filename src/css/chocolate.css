@@ -6,7 +6,6 @@
   overflow: hidden;
 }
 
-
 .slider .slick-dots {
   display: flex;
   justify-content: center;
@@ -18,9 +17,9 @@
   margin-right: 30px;
 }
 
- .slick-slide:last-child {
-     margin-right: 0;
- }
+.slick-slide:last-child {
+  margin-right: 0;
+}
 
 .slider .slick-dots li {
   list-style: none;
@@ -42,74 +41,63 @@
   border-radius: 32px;
 }
 
+.chocolate-box {
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  padding-top: 56px;
+  padding-bottom: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
-.chocolate-box{
-    
-    
-    text-align: center;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
-    border-radius: 15px;
-    padding-top: 56px;
-    padding-bottom: 26px;
+@media (min-width: 768px) {
+  .chocolate-box {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chocolate-box {
     padding-left: 24px;
-    padding-right: 24px;      
+    padding-right: 24px;
+  }
 }
 
-@media (min-width:768px) {
-    .chocolate-box{
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+.special-box {
+  padding-bottom: 42px;
 }
 
-@media (min-width:1200px) {
-    .chocolate-box {
-        padding-left: 24px;
-        padding-right: 24px;
-      
-    }
+.chocolate-cont {
+  max-width: 335px;
 }
 
-
-
-.special-box{
-    padding-bottom: 42px;
-}
-
-.chocolate-cont{
-    max-width: 335px;
-}
-
-
-@media (min-width:1200px) {
-    .chocolate-cont {
-        max-width: 360px;
-    }
-
+@media (min-width: 1200px) {
+  .chocolate-cont {
+    max-width: 360px;
+  }
 }
 .image-chocolate {
   position: relative;
 
+  position: relative;
 
-    position: relative;
-
-    top: 40px;
-    right: -125px;
-
+  top: 40px;
+  right: -125px;
 }
 
-@media (min-width:768px) {
-    .image-chocolate {
-        right: -130px;
-    }
+@media (min-width: 768px) {
+  .image-chocolate {
+    right: -130px;
+  }
 }
 
-@media (min-width:1200px) {
-    .image-chocolate {
-        right: -140px;
-    }
-
+@media (min-width: 1200px) {
+  .image-chocolate {
+    right: -140px;
+  }
 }
 
 .button-leave {
@@ -122,11 +110,10 @@
   padding-bottom: 128px;
 }
 
-.chocolate-section{
-    padding-bottom: 128px;
+.chocolate-section {
+  padding-bottom: 128px;
 }
 
-.chocolate-title{
-    margin-bottom: 24px;
+.chocolate-title {
+  margin-bottom: 24px;
 }
-

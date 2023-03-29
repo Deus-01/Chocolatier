@@ -8,19 +8,20 @@
   <a href="#" class="js-open-modal" data-modal="5">Thanks for feedback</a>
 
   <!-- Несколько модальных окон -->
-
-  <div class="modal modal-num1" data-modal="1">
+  <!-- -------------------------BUY NOW--------------------------- -->
+  <div class="modal modal-buy-now" data-modal="1">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
-      <use href="./img/icons.svg#x-close-mob"></use>
+      <use href="/img/icons.svg#icon-x-close-mob"></use>
     </svg>
-    <h2 class="section-title title-modal1">
-      <span class="title-accent">BUY </span>NOW
-    </h2>
-    <div class="wrapper-modal">
-      <ul class="slider-modal">
+    <h2 class="section-title"><span class="title-accent">BUY </span>NOW</h2>
+
+    <div class="wrapper">
+      <!-- Additional required wrapper -->
+      <ul class="slider">
         <!-- Slides -->
-        <li class="smodal-slide">
+
+        <li class="slider__item">
           <div class="weight-item">
             <picture class="modal-image">
               <source
@@ -38,14 +39,18 @@
                 media="(min-width: 768px)"
               />
 
-              <img src="/img/modal/100g.jpg" alt="Buy some chocolate" />
+              <img
+                src="/img/modal/100g.jpg"
+                width="167px"
+                alt="Buy some chocolate"
+              />
             </picture>
             <div class="products-box">
               <button type="button" class="products-button">100 g</button>
             </div>
           </div>
         </li>
-        <li class="smodal-slide">
+        <li class="slider__item">
           <div class="weight-item">
             <picture class="modal-image">
               <source
@@ -70,7 +75,8 @@
             </div>
           </div>
         </li>
-        <li class="smodal-slide">
+
+        <li class="slider__item">
           <div class="weight-item">
             <picture class="modal-image">
               <source
@@ -97,146 +103,226 @@
         </li>
       </ul>
     </div>
-    <div class="modal-text-container">
-      <form class="form-container">
-        <div class="form-item">
-          <label class="label-item" for="user-name">Personal information</label>
-          <input
-            class="input-item"
-            type="text"
-            name="user-name"
-            id="user-name"
-            placeholder="Name"
-          />
+
+    <div class="table-buy-how">
+      <div class="table-buy-cards">
+        <div class="weight-item">
+          <picture class="modal-image">
+            <source
+              srcset="
+                /img/modal/100g-mobile.jpg    1x,
+                /img/modal/100g-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/img/modal/100g.jpg 1x, /img/modal/100g-mobile@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <img
+              src="/img/modal/100g.jpg"
+              width="167px"
+              alt="Buy some chocolate"
+            />
+          </picture>
+          <div class="products-box">
+            <button type="button" class="products-button">100 g</button>
+          </div>
         </div>
-        <div class="form-item">
-          <label class="label-item" for="user-surname"></label>
-          <input
-            class="input-item"
-            type="text"
-            name="user-rurname"
-            id="user-surname"
-            placeholder="Surname"
-          />
+
+        <div class="weight-item">
+          <picture class="modal-image">
+            <source
+              srcset="
+                /img/modal/200g-mobile.jpg    1x,
+                /img/modal/200g-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/img/modal/200g.jpg 1x, /img/modal/200g-mobile@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <img src="/img/modal/200g.jpg" alt="Buy some chocolate" />
+          </picture>
+          <div class="products-box">
+            <button type="button" class="products-button">200 g</button>
+          </div>
         </div>
-        <div class="form-item">
-          <label class="label-item" for="user-mail">Email</label>
-          <input
-            class="input-item"
-            type="email"
-            name="user-mail"
-            id="user-mail"
-            placeholder="Enter your email"
-          />
+        <div class="weight-item">
+          <picture class="modal-image">
+            <source
+              srcset="
+                /img/modal/300g-mobile.jpg    1x,
+                /img/modal/300g-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="/img/modal/300g.jpg 1x, /img/modal/300g-mobile@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <img src="/img/modal/300g.jpg" alt="Buy some chocolate" />
+          </picture>
+          <div class="products-box">
+            <button type="button" class="products-button">300 g</button>
+          </div>
         </div>
-        <div class="form-item">
-          <label class="label-item" for="user-phone">Phone number</label>
+      </div>
+    </div>
+
+    <form class="form-container">
+      <div class="form-name">
+        <label class="label" for="user-name">Personal information</label>
+        <input
+          class="input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+        />
+        <input
+          class="input-surname"
+          type="text"
+          name="user-rurname"
+          id="user-surname"
+          placeholder="Surname"
+        />
+        <label class="label-surname hidden" for="user-surname"></label>
+      </div>
+      <div class="form-info">
+        <label class="label" for="user-mail">Email</label>
+        <input
+          class="input"
+          type="email"
+          name="user-mail"
+          id="user-mail"
+          placeholder="Enter your email"
+        />
+
+        <label class="label" for="user-phone">Phone number</label>
+        <div class="number-box">
           <input
-            class="input-item pnone-input"
+            class="input"
             type="tel"
             name="user-phone"
             id="user-phone"
             placeholder="Phone number"
           />
-          <svg class="ua-flag">
-            <use href="/img/icons.svg#ukraine"></use>
-          </svg>
+          <div class="number-icons">
+            <svg class="ua-icon">
+              <use href="/img/icons.svg#icon-ukraine"></use>
+            </svg>
+            <p class="number-code">+380</p>
+          </div>
         </div>
-        <div class="form-item">
-          <label class="label-item" for="user-card">Card number</label>
+
+        <label class="label" for="user-card">Card number</label>
+        <div class="card-box">
           <input
-            class="input-item"
+            class="input"
             type="number"
             name="user-card"
             id="user-card"
             placeholder="Enter card"
           />
-          <svg class="mastercard-icn">
-            <use href="/img/icons.svg#mastercard"></use>
+          <svg class="card-icon">
+            <use href="/img/icons.svg#icon-mastercard"></use>
           </svg>
         </div>
-        <div class="form-item">
-          <label class="label-item" for="comment">Comment</label>
-          <textarea
-            class="input-comment"
-            name="comment"
-            id="comment"
-            placeholder="Enter text"
-          ></textarea>
-        </div>
-        <button class="submit-btn" type="submit">
-          <span class="submit-btn-text">Submit</span>
-        </button>
-      </form>
-    </div>
+
+        <label class="label" for="comment">Comment</label>
+        <textarea
+          class="text-area"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button
+        class="button button-buy js-open-modal"
+        type="submit"
+        data-modal="4"
+      >
+        <span class="submit-btn-text">Submit</span>
+      </button>
+    </form>
   </div>
 
-  <!-- Modal 2 -->
-  <div class="modal modal-num2" data-modal="2">
+  <!---------------- LEAVE ------------------>
+  <div class="modal modal-leave" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
-      <use href="/img/icons.svg#x-close-mob"></use>
+      <use href="/img/icons.svg#icon-x-close-mob"></use>
     </svg>
-    <div class="modal-text-container">
-      <h2 class="section-title">
-        LEAVE A REVIEW <br />
-        ABOUT <span class="title-accent">OUR CHOCOLATE</span>
-      </h2>
-      <form class="form-container">
-        <div class="form-item">
-          <label class="label-item" for="user-name1"></label>
-          <input
-            class="input-item"
-            type="text"
-            name="user-name"
-            id="user-name1"
-            placeholder="Name"
-          />
-        </div>
-        <div class="form-item">
-          <label class="label-item" for="user-mail1"></label>
-          <input
-            class="input-item"
-            type="email"
-            name="user-mail"
-            id="user-mail1"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="form-item">
-          <label class="label-item" for="user-phone1"></label>
-          <input
-            class="input-item"
-            type="tel"
-            name="user-phone"
-            id="user-phone1"
-            placeholder="Phone number"
-          />
-          <svg class="ua-flag">
-            <use href="/img/icons.svg#ukraine"></use>
+    <h2 class="section-title">
+      LEAVE A REVIEW <br />
+      ABOUT <span class="title-accent">OUR CHOCOLATE</span>
+    </h2>
+    <h2 class="section-title-tablet">
+      LEAVE A REVIEW ABOUT<br />
+      <span class="title-accent">OUR CHOCOLATE</span>
+    </h2>
+    <form class="form-container">
+      <label class="label" for="user-name1"></label>
+      <input
+        class="input"
+        type="text"
+        name="user-name"
+        id="user-name1"
+        placeholder="Name"
+      />
+      <label class="label" for="user-mail1"></label>
+      <input
+        class="input"
+        type="email"
+        name="user-mail"
+        id="user-mail1"
+        placeholder="Enter your email"
+      />
+      <label class="label" for="user-phone1"></label>
+      <div class="number-box">
+        <input
+          class="input"
+          type="tel"
+          name="user-phone"
+          id="user-phone1"
+          placeholder="Phone number"
+        />
+        <div class="number-icons">
+          <svg class="ua-icon">
+            <use href="/img/icons.svg#icon-ukraine"></use>
           </svg>
+          <p class="number-code">+380</p>
         </div>
-        <div class="form-item">
-          <label class="label-item" for="comment1"></label>
-          <textarea
-            class="input-comment"
-            name="comment"
-            id="comment1"
-            placeholder="Enter text"
-          ></textarea>
-        </div>
-        <button class="submit-btn" type="submit">
-          <span class="submit-btn-text">Send</span>
-        </button>
-      </form>
-    </div>
+      </div>
+
+      <label class="" for="comment1"></label>
+      <textarea
+        class="text-area"
+        name="comment"
+        id="comment1"
+        placeholder="Enter text"
+      ></textarea>
+      <button
+        class="button button-buy js-open-modal"
+        type="submit"
+        data-modal="5"
+      >
+        <span class="submit-btn-text">Send</span>
+      </button>
+    </form>
   </div>
 
-  <!-- Modal 3 -->
-  <div class="modal modal-num3" data-modal="3">
+  <!-------------------------- SUBSCRIBE -------------------------->
+  <div class="modal modal-subscribe" data-modal="3">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
-      <use href="/img/icons.svg#x-close-mob"></use>
+      <use href="/img/icons.svg#icon-x-close-mob"></use>
     </svg>
 
     <picture class="modal-subscribe-image">
@@ -252,39 +338,39 @@
         media="(min-width: 768px)"
       />
 
-      <img src="/img/modal/subscr.jpg" alt="Buy some chocolate" />
+      <img src="/img/modal/subscr.jpg" width="313px" alt="Buy some chocolate" />
     </picture>
     <div class="modal-text-container">
       <h2 class="section-title">
         EXPLORE OUR <br />
         <span class="title-accent">NEW CHOCOLATE</span> FIRST!
       </h2>
-      <form class="form-container form-modal3">
-        <div class="form-item">
-          <label for="user-mail2"></label>
+      <form class="form-container">
+        <div class="modal-subscr-button">
+          <label class="hidden" for="user-mail2">email</label>
           <input
-            class="input-item input-modal3"
+            class="input"
             type="email"
             name="user-mail"
             id="user-mail2"
             placeholder="Enter your email"
           />
+          <button class="button button-buy" type="submit">
+            <span class="submit-btn-text">Submit</span>
+          </button>
         </div>
-        <button class="submit-btn" type="submit">
-          <span class="submit-btn-text">Submit</span>
-        </button>
       </form>
     </div>
   </div>
 
-  <!-- Modal 4 -->
-  <div class="modal modal-type3 modal-num4" data-modal="4">
+  <!-------------------------- THANK YOU ----------------------------->
+  <div class="modal modal-thanks" data-modal="4">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 24 24">
-      <use href="/img/icons.svg#x-close-mob"></use>
+      <use href="/img/icons.svg#icon-x-close-mob"></use>
     </svg>
     <div class="modal-text-section">
-      <h2 class="section-title modal-thanks-title">THANK YOU!</h2>
+      <h2 class="section-title">THANK YOU!</h2>
       <p class="modal-thanks-text">
         We are glad that you ordered our chocolate and we are giving you a 20%
         discount on all our products.
@@ -307,11 +393,11 @@
     </picture>
   </div>
 
-  <!-- Modal 5 -->
-  <div class="modal modal-type3 modal-num5" data-modal="5">
+  <!-- -------------------------FEEDBACK --------------------------->
+  <div class="modal modal-feedback" data-modal="5">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close">
-      <use href="/img/icons.svg#x-close-mob"></use>
+      <use href="/img/icons.svg#icon-x-close-mob"></use>
     </svg>
     <div class="modal-text-section">
       <h2 class="section-title modal-thanks-title">

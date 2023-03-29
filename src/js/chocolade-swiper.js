@@ -9,8 +9,8 @@ $(document).ready(function (){
   
     responsive: [
     {
-        // when window width is >= 480px
-        breakpoint: 480,
+        // when window width is >= 375px
+        breakpoint: 200,
         settings: {
           slidesToShow: 1,
           spaceBetween: 30

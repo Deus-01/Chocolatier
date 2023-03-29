@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./carousel.css');
 @import url('./header.css');
 @import url('./offer.css');
 @import url('./taste.css');
@@ -30,6 +31,7 @@
   --bgcolor: #fafafa;
   --bgmenu: #1e1823;
   --button-text: #ffffff;
+  --label-text: #000000;
 }
 
 .hidden {
@@ -65,6 +67,12 @@ body {
   padding: 0 20px;
 }
 
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 335px;
+  }
+}
+
 @media screen and (min-width: 375px) {
   .container {
     width: 335px;
@@ -84,11 +92,12 @@ body {
   }
 }
 
-.section-title {
+.section-title,
+.section-title-tablet {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
