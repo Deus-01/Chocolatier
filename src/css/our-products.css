@@ -76,4 +76,10 @@
   font-size: 14px;
   line-height: 1.21;
   color: var(--main-color);
+  transition: 0.5s;
+}
+
+.products-button:hover {
+  background-color: var(--accent-color);
+  color: var(--button-text);
 }
