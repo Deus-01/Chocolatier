@@ -303,9 +303,9 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero-container {
     background: linear-gradient(
       180deg,
@@ -337,15 +337,11 @@
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-container {
-    max-width: 768px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-    padding-top: 671px;
+    max-width: 704px;
     background: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
@@ -373,12 +369,11 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero-container {
     max-width: 1200px;
-    padding-top: 381px;
     background: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
@@ -414,6 +409,12 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button-how {
+  display: flex;
+  border-radius: 100px;
+  padding: 12px 28px;
 }
 
 @media screen and (max-width: 334px) {
@@ -475,6 +476,7 @@
 
 .button-buy-how {
   display: flex;
+  align-items: center;
   gap: 14px;
   list-style: none;
   padding: 0;
@@ -484,20 +486,12 @@
   .button-buy {
     width: 124px;
   }
-
-  .button-how {
-    width: 164px;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .button-buy,
   .button-how {
     padding: 14px 40px;
-  }
-
-  .button-how {
-    width: 185px;
   }
 
   .button-buy {
@@ -526,6 +520,17 @@
   gap: 14px;
   align-items: center;
 }
+
+.scroll:hover .scroll-p {
+  color: var(--accent-color);
+}
+
+.scroll:hover .scroll-link {
+  fill: var(--button-text);
+  stroke: var(--button-text);
+  background-color: var(--accent-color);
+}
+
 .button-div {
   display: flex;
   flex-direction: column;
