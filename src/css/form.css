@@ -198,7 +198,29 @@
 .form-name .input {
   margin-bottom: 14px;
 }
-
+.input,
+.input-surname,
+.text-area {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+}
+@media screen and (min-width: 768px) {
+  .input,
+  .input-surname,
+  .text-area {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .button-buy {
+    padding: 14px 40px;
+  }
+}
 .input-surname {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -482,12 +504,18 @@
   stroke: var(--button-text);
 }
 
+.modal-subscribe-image {
+  display: block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+}
 .modal-subscribe .section-title {
   text-align: start;
 }
 
 .modal-subscribe .modal-text-container {
-  margin-top: 32px;
+  padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 32px;
@@ -497,6 +525,14 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+  .modal-subscribe .input {
+    width: 273px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+  }
 }
 
 .modal-subscribe .form-container {
@@ -519,22 +555,49 @@
 .modal-feedback {
   background-color: var(--accent-color);
 }
-
+.modal-thanks-image {
+  display: block;
+  border-bottom-left-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 .modal-thanks .modal__cross,
 .modal-feedback .modal__cross {
   padding: 6px;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   background-color: #fcf1e0;
   border-radius: 50%;
-  stroke: var(--accent-color);
+  stroke: #d44528;
 }
 
-.modal-thanks .modal-text-section,
+.modal-thanks .modal-text-section {
+  padding-top: 84px;
+  padding-left: 68px;
+  padding-right: 24px;
+  padding-bottom: 170px;
+}
 .modal-feedback .modal-text-section {
-  margin-top: 84px;
-  margin-left: 58px;
-  margin-right: 24px;
+  padding-top: 84px;
+  padding-left: 58px;
+  padding-right: 24px;
+  padding-bottom: 178px;
+}
+@media screen and (min-width: 768px) {
+  .modal-thanks .modal-text-section {
+    padding-top: 154px;
+    padding-left: 163px;
+    padding-right: 44px;
+    padding-bottom: 154px;
+  }
+  .modal-feedback .modal-text-section {
+    padding-top: 163px;
+    padding-left: 170px;
+    padding-right: 49px;
+    padding-bottom: 163px;
+  }
 }
 
 .modal-thanks .section-title,
@@ -548,4 +611,18 @@
 .modal-thanks .modal-thanks-text,
 .modal-feedback .modal-thanks-text {
   margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-thanks .section-title,
+  .modal-feedback .section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .modal-thanks .modal-thanks-text,
+  .modal-feedback .modal-thanks-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
