@@ -73,18 +73,26 @@
 /* top-sellers images styles */
 .topseller-image{
     height: auto;
+    width: 100%;
+    
     border-radius: 15px;
 }
+.topseller-alt-image {
+    height: auto;
+    width: 100%;
+}
+
 
 @media(min-width: 768px){
-    .topseller-image {
-        max-width: 344px;
+    .topseller-image, .topseller-alt-image {
+         width: 344px;
+         height: 464px;
     }
 }
 
 @media(min-width: 1200px) {
-    .topseller-image {
-        max-width: 368px;        
+    .topseller-image, .topseller-alt-image {
+        width: 368px;        
     }
 }
 
