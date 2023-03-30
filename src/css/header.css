@@ -114,7 +114,8 @@
   padding-bottom: 36px;
 }
 
-.social-link:hover .svg-social-links {
+.social-link:hover .svg-social-links,
+.social-link:focus .svg-social-links {
   stroke: var(--accent-color);
 }
 
@@ -268,7 +269,8 @@
   fill: var(--bgmenu);
 }
 
-.social-link-mobile:hover .svg-social-links-mobile {
+.social-link-mobile:hover .svg-social-links-mobile,
+.social-link-mobile:focus .svg-social-links-mobile {
   stroke: var(--accent-color);
 }
 
@@ -425,7 +427,7 @@
     margin-bottom: 32px;
   }
   .button-how {
-    max-width: 162px;
+    max-width: 164px;
   }
 
   .button-buy {
@@ -484,7 +486,7 @@
   }
 
   .button-how {
-    width: 161px;
+    width: 164px;
   }
 }
 

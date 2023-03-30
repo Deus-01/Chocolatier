@@ -79,7 +79,8 @@
   transition: 0.5s;
 }
 
-.products-button:hover {
+.products-button:hover,
+.products-button:focus {
   background-color: var(--accent-color);
   color: var(--button-text);
 }
