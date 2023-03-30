@@ -91,7 +91,6 @@ li {
 .overlay {
   position: absolute;
   box-sizing: border-box;
-  border-radius: 15px;
   top: 0;
   left: 0;
   width: 335px;
