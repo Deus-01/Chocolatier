@@ -57,6 +57,20 @@ body {
   background-color: var(--bgcolor);
   opacity: 1;
   transition: 3s;
+
+  animation-name: qwerty;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes qwerty {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
 .section {
