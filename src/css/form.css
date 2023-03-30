@@ -79,6 +79,15 @@
 
 /* ----------------------MODAL BUY NOW---------------------- */
 
+.form .modal-buy-now {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+.modal-buy-now::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .form .modal-buy-now,
   .form .modal-leave {

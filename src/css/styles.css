@@ -59,22 +59,6 @@ body {
   transition: 3s;
 }
 
-.main {
-  animation-name: qwerty;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes qwerty {
-  from {
-    opacity: 0%;
-  }
-
-  to {
-    opacity: 100%;
-  }
-}
-
 .section {
   padding-top: 72px;
 }
