@@ -83,6 +83,10 @@
   margin-bottom: 4px;
 }
 
+.footer-contact-link {
+  transition: 0.3s;
+}
+
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
@@ -132,6 +136,7 @@
   height: 22px;
   stroke: white;
   fill: transparent;
+  transition: 0.3s;
 }
 
 .footer-nav {
@@ -158,6 +163,10 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
   margin-bottom: 18px;
+}
+
+.footer-nav-link {
+  transition: 0.3s;
 }
 
 .footer-nav-link:hover,

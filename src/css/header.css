@@ -88,6 +88,7 @@
   padding-top: 28px;
   padding-bottom: 34px;
   display: block;
+  transition: 0.3s;
 }
 
 .nav-item:hover,
@@ -124,6 +125,7 @@
   height: 24px;
   stroke: var(--main-color);
   fill: var(--bgcolor);
+  transition: 0.3s;
 }
 
 .burger-button {
@@ -240,7 +242,11 @@
   letter-spacing: -0.02em;
   color: var(--button-text);
   text-decoration: none;
+  transition: 0.5s;
 }
+
+.nav-item-mobile:hover,
+.nav-item-mobile:focus,
 .nav-item-mobile:active {
   color: var(--accent-color);
 }
@@ -267,6 +273,7 @@
   height: 24px;
   stroke: var(--button-text);
   fill: var(--bgmenu);
+  transition: 0.3s;
 }
 
 .social-link-mobile:hover .svg-social-links-mobile,
@@ -510,6 +517,7 @@
   align-items: center;
   stroke: var(--accent-color);
   fill: var(--accent-color);
+  transition: 0.3s;
 }
 .svg-scroll {
   width: 22px;
@@ -549,6 +557,7 @@
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: var(--button-text);
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 768px) {
