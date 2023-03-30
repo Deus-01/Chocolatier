@@ -57,7 +57,9 @@ body {
   background-color: var(--bgcolor);
   opacity: 1;
   transition: 3s;
+}
 
+.main {
   animation-name: qwerty;
   animation-duration: 3s;
   animation-fill-mode: forwards;
